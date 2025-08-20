@@ -6,7 +6,7 @@ import google.generativeai as genai
 # Load API key
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Streaming function
 def stream_gemini(user_input):
@@ -64,3 +64,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
